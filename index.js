@@ -36,7 +36,7 @@ function Popover(content, title) {
  * Inherits from `Tip.prototype`.
  */
 
-Popover.prototype.__proto__ = Tip.prototype;
+Popover.prototype = new Tip;
 
 /**
  * Replace `content`.
